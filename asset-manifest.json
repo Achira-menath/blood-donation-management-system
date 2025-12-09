@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/blood-donation-management-system/static/css/main.90164706.css",
+    "main.js": "/blood-donation-management-system/static/js/main.799cbcbe.js",
+    "index.html": "/blood-donation-management-system/index.html",
+    "main.90164706.css.map": "/blood-donation-management-system/static/css/main.90164706.css.map",
+    "main.799cbcbe.js.map": "/blood-donation-management-system/static/js/main.799cbcbe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90164706.css",
+    "static/js/main.799cbcbe.js"
+  ]
+}
