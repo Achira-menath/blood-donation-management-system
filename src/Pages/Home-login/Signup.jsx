@@ -3,7 +3,7 @@ import "./Signup.css";
 
 const Signup = ({ close }) => {
   const handleSubmit = (e) => {
-    e.preventDefault(); // ✅ Prevent page reload
+    e.preventDefault();
   };
 
   return (
