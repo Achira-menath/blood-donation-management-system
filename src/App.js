@@ -1,7 +1,10 @@
-import Login from "./components/Login";
+import React from "react";
+import Login from "./Pages/Home-login/Login";
 
 function App() {
-  return <Login />;
+  return (
+    <Login />
+  );
 }
 
 export default App;
