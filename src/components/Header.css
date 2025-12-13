@@ -1,8 +1,16 @@
 .header {
-  width: 100%;
+  position: relative;
+  width: 100vw;              /* force full screen */
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;        /* break out of parent */
+  margin-right: -50vw;
+  margin-top: -0.5vw;
+
   background-color: #F3F3F3;
   border-bottom: 2px solid #FF0105;
   padding: 10px 0;
+  
 }
 
 .header-container {
@@ -42,7 +50,7 @@
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
-  color: #333333;
+  color: #424242;
 }
 
 .nav-menu ul li a:hover {

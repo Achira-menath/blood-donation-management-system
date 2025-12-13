@@ -1,5 +1,19 @@
-.App {
+/* Reset everything */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/* Ensure body takes full viewport */
+html, body, #root {
   width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Prevent margin collapsing on first elements */
+.page-content, .home-page {
+  overflow: hidden;  /* this stops <h1> top margin from collapsing */
+  padding-top: 0;    /* optional: ensures flush with header */
 }
