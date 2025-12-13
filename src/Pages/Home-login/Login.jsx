@@ -10,7 +10,17 @@ const Login = () => {
       <div className="page">
         {/* Navbar */}
         <header className="navbar">
-          <div className="nav-logo">🩸 BloodLink</div>
+          <div className="nav-logo">
+            <img 
+            src="D:\sample\blood\public\Assets\logo.png" 
+            alt="Logo"
+            style={{ width: "45px", height: "45px" }}
+          />
+          <img 
+            src="D:\sample\blood\public\Assets\bloodlink.png"
+            alt="blood link"
+            style={{ height: "32px" }}
+          /></div>
           <nav>
             <ul>
               <li>Home</li>
