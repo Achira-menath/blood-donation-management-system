@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../../components/Header";
+import HeaderMain from "../../components/HeaderMain";
 
 export default function DonateBlood() {
   return (
     <>
-      <Header />
+      <HeaderMain />
       <div style={{ padding: "40px" }}>
         <h1>Donate Blood</h1>
         <p>Register now and become a lifesaver for someone in need.</p>

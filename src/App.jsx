@@ -1,11 +1,12 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "./Pages/Home-login/Home-page";
+import Home from "./Pages/Home-login/Home-page-AL";
 import SearchDonor from "./Pages/Search-doner/Search-doner";
 import DonateBlood from "./Pages/Donate/Donate-blood";
 import AboutUs from "./Pages/Feedback/Aboutus";
 import Contact from "./Pages/Feedback/Contactus";
+import Viewprofile from "./Pages/Profile/View-profile"
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <Route path="/donate" element={<DonateBlood />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/Viewprofile" element={<Viewprofile />} />
+
       </Routes>
     </BrowserRouter>
   );
