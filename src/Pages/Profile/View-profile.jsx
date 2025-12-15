@@ -1,5 +1,6 @@
 import React from "react";
 import HeaderMain from "../../components/HeaderMain";
+import Footer from "../../components/Footer";
 
 export default function Viewprofile() {
   return (
@@ -9,6 +10,7 @@ export default function Viewprofile() {
         <h1>Welcome to profile</h1>
         <p>edite everything.</p>
       </div>
+      <Footer bgColor="#030000" opacity={0.6} />
     </>
   );
 }
