@@ -24,6 +24,45 @@ export default function EditProfile() {
     year: "numeric",
   });
 
+  const handleChange = (e) => {
+  const { name, value } = e.target;
+  setFormData({ ...formData, [name]: value });
+ };
+
+
+  const [formData, setFormData] = useState({
+  firstName: "Hirushi",
+  lastName: "Chamathka",
+  province: "Southern Province",
+  district: "Galle",
+  gender: "Female",
+  address: "92B, Colombo rd, Galle",
+  dob: "2004-03-20",
+  lastDonation: "2024-06-29",
+ });
+
+ const handleProvinceChange = (e) => {
+  const selectedProvince = e.target.value;
+  setFormData({
+    ...formData,
+    province: selectedProvince,
+    district: provinceDistricts[selectedProvince][0], // reset district
+  });
+ };
+
+  const provinceDistricts = {
+  "Western Province": ["Colombo", "Gampaha", "Kalutara"],
+  "Central Province": ["Kandy", "Matale", "Nuwara Eliya"],
+  "Southern Province": ["Galle", "Matara", "Hambantota"],
+  "Northern Province": ["Jaffna", "Kilinochchi", "Mannar", "Vavuniya", "Mullaitivu"],
+  "Eastern Province": ["Trincomalee", "Batticaloa", "Ampara"],
+  "North Western Province": ["Kurunegala", "Puttalam"],
+  "North Central Province": ["Anuradhapura", "Polonnaruwa"],
+  "Uva Province": ["Badulla", "Monaragala"],
+  "Sabaragamuwa Province": ["Ratnapura", "Kegalle"],
+ };
+
+
   return (
     <>
       <div
@@ -57,51 +96,95 @@ export default function EditProfile() {
           <form className="edit-form">
             <div className="field first-name">
                 <label>First Name</label>
-                <input value="Hirushi" readOnly />
+                <input
+                name="firstName"
+                value={formData.firstName}
+                onChange={handleChange}
+                />
             </div>
 
             <div className="field province">
                 <label>Province</label>
-                <select>
-                <option>Southern Province</option>
+                <select
+                name="province"
+                value={formData.province}
+                onChange={handleProvinceChange}
+                >
+                {Object.keys(provinceDistricts).map((prov) => (
+                    <option key={prov} value={prov}>
+                    {prov}
+                    </option>
+                ))}
                 </select>
             </div>
 
             <div className="field last-name">
                 <label>Last Name</label>
-                <input value="Chamathka" readOnly />
+                <input
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleChange}
+                />
             </div>
 
             <div className="field district">
                 <label>District</label>
-                <select>
-                <option>Galle</option>
+                <select
+                name="district"
+                value={formData.district}
+                onChange={handleChange}
+                >
+                {provinceDistricts[formData.province].map((dist) => (
+                    <option key={dist} value={dist}>
+                    {dist}
+                    </option>
+                ))}
                 </select>
             </div>
 
             <div className="field dob">
                 <label>Date Of Birth</label>
-                <input value="20/03/2004" readOnly />
+                <input
+                type="date"
+                name="dob"
+                value={formData.dob}
+                onChange={handleChange}
+                />
             </div>
 
             <div className="field gender">
                 <label>Gender</label>
-                <select>
+                <select
+                name="gender"
+                value={formData.gender}
+                onChange={handleChange}
+                >
                 <option>Female</option>
                 <option>Male</option>
+                <option>Other</option>
                 </select>
             </div>
 
             <div className="field address">
                 <label>Address</label>
-                <input value="92B, Colombo rd, Galle" readOnly />
+                <input
+                name="address"
+                value={formData.address}
+                onChange={handleChange}
+                />
             </div>
 
             <div className="field donation">
                 <label>Last Donation Date</label>
-                <input value="29 - 6 - 2024" readOnly />
+                <input
+                type="date"
+                name="lastDonation"
+                value={formData.lastDonation}
+                onChange={handleChange}
+                />
             </div>
             </form>
+
 
         </div>
 
