@@ -1,0 +1,136 @@
+.profile-page {
+  background-color: #f9f9f9;   /* ← change this color */
+  background-image: url("../../assets/Vbg.png");
+  min-height: 92.25vh;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 48px;
+  position: relative;
+  font-family: "Inter", sans-serif;
+}
+
+/* ================= HEADER ================= */
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.profile-header h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.profile-header p {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 14px;
+}
+
+.outline-btn {
+  padding: 8px 22px;
+  border-radius: 999px;
+  border: 1.5px solid #ff0105;
+  background: transparent;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.outline-btn:hover {
+  background: rgba(255, 1, 5, 0.08);
+}
+
+/* ================= PROFILE SECTION ================= */
+.profile-wrapper {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.user-info {
+  position: absolute;
+  left: 220px;
+  top: -85px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  z-index: 3;
+}
+
+.user-info img {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.user-info span {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* ================= CARD ================= */
+.profile-card {
+  width: 760px;
+  background: #f9f9f9;
+  border-radius: 18px;
+  padding: 30px 36px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.18);
+  z-index: 2;
+}
+
+.profile-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.profile-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.profile-card td {
+  padding: 12px 6px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 13px;
+}
+
+.profile-card td:first-child {
+  width: 38%;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* ================= BLOODLINK LOGO ================= */
+.logo {
+  position: absolute;
+  right: 210px;
+  bottom: 28px;
+  width: 50px;
+  z-index: 3;
+}
+
+.bloodlink {
+  position: absolute;
+  right: 50px;
+  bottom: 40px;
+  width: 150px;
+  z-index: 3;
+}
