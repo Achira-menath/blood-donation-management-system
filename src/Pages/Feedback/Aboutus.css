@@ -1,0 +1,103 @@
+.about-container {
+  background-color: #ffffff;
+  padding: 30px 0;
+  min-height: 100vh;
+}
+
+/* Back Button */
+.back-btn {
+  margin: 0 0 20px 40px;
+  border: 1px solid #e53935;
+  background: transparent;
+  color: #e53935;
+  padding: 5px 14px;
+  border-radius: 18px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Main Content Wrapper */
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  padding: 40px 20px 20px;
+}
+
+/* Text Section */
+.about-text {
+  flex: 1.2;
+  text-align: center;
+}
+
+.about-text h2 {
+  color: #000;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.about-text h3 {
+  font-size: 15px;
+  margin-top: 22px;
+  color: #000;
+}
+
+.about-text p {
+  font-size: 13px;
+  color: #444;
+  line-height: 1.6;
+  margin: 6px 0;
+}
+
+/* Bullet Points */
+.about-text ul {
+  margin: 12px auto;
+  padding: 0;
+  list-style: none;
+  max-width: 520px;
+}
+
+.about-text li {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+/* Image Section */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.about-image img {
+  max-width: 360px;
+  height: auto;
+}
+
+/* Stats Section */
+.about-stats {
+  background-color: #4a4a4a;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 35px 0;
+  margin-top: 30px;
+}
+
+.about-stats div {
+  text-align: center;
+}
+
+.about-stats h2 {
+  font-size: 26px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.about-stats p {
+  font-size: 13px;
+  margin-top: 6px;
+}
