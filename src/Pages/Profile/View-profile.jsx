@@ -44,7 +44,10 @@ export default function ViewProfile() {
             <Link to="/">
             <button className="outline-btn">Back Home</button>
             </Link>
+            <Link to="/Editprofile">
             <button className="outline-btn">Edit Profile</button>
+            </Link>
+            
           </div>
         </div>
 

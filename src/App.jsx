@@ -7,6 +7,8 @@ import DonateBlood from "./Pages/Donate/Donate-blood";
 import AboutUs from "./Pages/Feedback/Aboutus";
 import Contact from "./Pages/Feedback/Contactus";
 import Viewprofile from "./Pages/Profile/View-profile"
+import Editprofile from "./Pages/Profile/Edit-profile";
+import Beforelogin from "./Pages/Home-login/Home-page"
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/Viewprofile" element={<Viewprofile />} />
+        <Route path="/Editprofile" element={<Editprofile />} />
+        <Route path="/Beforelogin" element={<Beforelogin />} />
+        
 
       </Routes>
     </BrowserRouter>
