@@ -1,0 +1,46 @@
+/* src/styles/Header.css (New File) */
+.home-header {
+  background-color: #ffffff;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.drop-logo {
+  width: 40px; 
+  height: 40px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #D32F2F; /* Blood red color */
+}
+
+.header-buttons button {
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.log-in-btn {
+  background-color: transparent;
+  color: #D32F2F;
+  border: 2px solid #D32F2F;
+}
+
+.sign-up-btn {
+  background-color: #D32F2F;
+  color: white;
+  border: none;
+}
