@@ -1,0 +1,104 @@
+.contact-container {
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+/* Back Button */
+.back-btn {
+  margin: 25px 40px;
+  border: 1px solid #ff0105;
+  background: transparent;
+  color: #ff0105;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Main Layout */
+.contact-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Image */
+.contact-image img {
+  max-width: 420px;
+  height: auto;
+}
+
+/* Card */
+.contact-card {
+  background: #cfcfcf;
+  padding: 40px;
+  border-radius: 30px;
+  width: 360px;
+}
+
+.contact-card h2 {
+  color: #ff0105;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+/* Info */
+.contact-info p {
+  margin: 4px 0;
+  color: #000;
+  font-size: 14px;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 25px;
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons span {
+  width: 34px;
+  height: 34px;
+  background: #777;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Stats Bar */
+.contact-stats {
+  background: #4a4a4a;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 35px 0;
+}
+
+.contact-stats h3 {
+  font-size: 26px;
+  margin: 0;
+}
+
+.contact-stats p {
+  font-size: 13px;
+  margin-top: 6px;
+}
+.contact-photo {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-photo img {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
