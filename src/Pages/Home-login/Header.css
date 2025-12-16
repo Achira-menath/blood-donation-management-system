@@ -10,13 +10,17 @@
 .home-logo-container {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
+  
 }
 
-.drop-logo {
-  width: 40px; 
-  height: 40px;
+.header-logo {
+  width: 40px;      /* logo width */
+  height: auto;     /* ratio maintain කරගන්න */
+  object-fit: contain;
 }
+
+
 
 .logo-text {
   font-size: 24px;
@@ -34,8 +38,8 @@
 }
 
 .log-in-btn {
-  background-color: transparent;
-  color: #D32F2F;
+  background-color: #D32F2F;
+  color: white;
   border: 2px solid #D32F2F;
 }
 

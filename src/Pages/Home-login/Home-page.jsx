@@ -3,6 +3,7 @@ import React from "react";
 import Header from "./Header"; // New header component
 import FooterHome from "./FooterHome"; // New footer component
 import "./Home-page.css"; // New CSS file for the main content
+import Homeimg from "../../assets/home.png";
 
 // You will need to replace '/path/to/blood-bag.png' and 
 // '/path/to/small-blood-drop.png' with the actual paths to your image assets.
@@ -33,11 +34,7 @@ export default function Home() {
 
         <div className="hero-image-content">
           {/* Main illustration image, replace with your asset */}
-          <img 
-            src="/Assets/blood-bag.png" 
-            alt="People donating blood" 
-            className="main-illustration" 
-          />
+          <img src={Homeimg} alt="bg image" />
         </div>
       </main>
 
