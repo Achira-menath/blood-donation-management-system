@@ -1,5 +1,6 @@
 // src/components/FooterHome.jsx (New File)
 import React from 'react';
+import { Link } from "react-router-dom";
 import './FooterHome.css'; // Assuming you put the CSS in a styles folder
 import Hedimg from "../../assets/logo.png";
 
@@ -14,7 +15,9 @@ const FooterHome = () => {
           <div className="chat-icon">💬</div>
           <div>
             <p className="share-experience">Share your experience with us!</p>
+            <Link to="/Feedback">
             <button className="feedback-btn">Click Here to send Feedback</button>
+            </Link>
           </div>
         </div>
 

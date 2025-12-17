@@ -11,6 +11,7 @@ import Editprofile from "./Pages/Profile/Edit-profile";
 import Beforelogin from "./Pages/Home-login/Home-page";
 import Login from "./Pages/Home-login/Login";
 import Signup from "./Pages/Home-login/Signup";
+import Feedback from "./Pages/Feedback/Contact-feedback";
 
 
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/Beforelogin" element={<Beforelogin />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />
+        <Route path="/Feedback" element={<Feedback />} />
         
 
       </Routes>
