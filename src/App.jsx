@@ -8,7 +8,11 @@ import AboutUs from "./Pages/Feedback/Aboutus";
 import Contact from "./Pages/Feedback/Contactus";
 import Viewprofile from "./Pages/Profile/View-profile"
 import Editprofile from "./Pages/Profile/Edit-profile";
-import Beforelogin from "./Pages/Home-login/Home-page"
+import Beforelogin from "./Pages/Home-login/Home-page";
+import Login from "./Pages/Home-login/Login";
+import Signup from "./Pages/Home-login/Signup";
+
+
 
 function App() {
   return (
@@ -22,6 +26,8 @@ function App() {
         <Route path="/Viewprofile" element={<Viewprofile />} />
         <Route path="/Editprofile" element={<Editprofile />} />
         <Route path="/Beforelogin" element={<Beforelogin />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Signup" element={<Signup />} />
         
 
       </Routes>

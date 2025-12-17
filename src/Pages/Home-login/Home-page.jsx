@@ -4,6 +4,7 @@ import Header from "./Header"; // New header component
 import FooterHome from "./FooterHome"; // New footer component
 import "./Home-page.css"; // New CSS file for the main content
 import Homeimg from "../../assets/home.png";
+import givebloodimg from "../../assets/give-blood.png"
 
 // You will need to replace '/path/to/blood-bag.png' and 
 // '/path/to/small-blood-drop.png' with the actual paths to your image assets.
@@ -17,7 +18,7 @@ export default function Home() {
       <main className="hero-section">
         <div className="hero-text-content">
           <p className="hero-quote">
-            “To create a world where no life is lost due to the **unavailability of blood**.”
+            “To create a world where no life is lost due to the unavailability of blood.”
           </p>
           <p className="hero-description">
             Blood-link will be the universally recognized, instant, and trusted bridge connecting every urgent blood request with a willing, local donor.
@@ -25,8 +26,8 @@ export default function Home() {
           
           {/* Small image on the left, replace with your asset */}
           <div className="small-logo-box">
-            <img src="/Assets/small-blood-drop.png" alt="Give Blood Save Life" className="small-logo-img" />
-            <span>GIVE BLOOD SAVE LIFE</span>
+            <img src={givebloodimg} alt="Give Blood Save Life" className="small-logo-img" />
+            
           </div>
 
           <button className="main-login-btn">Log in</button>

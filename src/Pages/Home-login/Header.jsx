@@ -1,5 +1,6 @@
 // src/components/Header.jsx (New File)
 import React from 'react';
+import { Link } from "react-router-dom";
 import './Header.css'; // Assuming you put the CSS in a styles folder
 import Hedimg from "../../assets/logo.png";
 
@@ -17,9 +18,13 @@ const Header = () => {
         <span className="logo-text">BloodLink</span>
       </div>
       <div className="header-buttons">
-        <button className="log-in-btn">Log in</button>
-        <button className="sign-up-btn">Sign up</button>
-      </div>
+         <Link to="/Login">
+         <button className="log-in-btn">Log in</button>
+         </Link>
+         <Link to="/Signup">
+         <button className="sign-up-btn">Sign up</button>
+         </Link>
+        </div>
     </header>
   );
 };

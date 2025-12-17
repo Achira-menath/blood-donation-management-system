@@ -111,6 +111,7 @@ footer {
 
 /* --- Bottom Section (Copyright/Privacy) --- */
 .footer-bottom {
+  background-color: #D32F2F;
   padding: 20px 100px;
   display: flex;
   justify-content: space-between;

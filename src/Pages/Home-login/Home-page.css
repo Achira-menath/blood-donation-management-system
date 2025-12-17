@@ -47,15 +47,12 @@
 }
 
 .small-logo-img {
-    width: 30px;
-    height: 30px;
+    width: 200px;
+    height: 200px;
 }
 
-.small-logo-box span {
-    font-size: 12px;
-    font-weight: 600;
-    color: #D32F2F;
-}
+
+
 
 .main-login-btn {
   background-color: #D32F2F;
@@ -66,6 +63,7 @@
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+  margin-left: 400px;
 }
 
 .hero-image-content {
@@ -94,7 +92,7 @@
 .stat-number {
   font-size: 30px;
   font-weight: 700;
-  color: #D32F2F; /* Red color for the number */
+  color: #ffffff; /* Red color for the number */
   margin-bottom: 5px;
 }
 

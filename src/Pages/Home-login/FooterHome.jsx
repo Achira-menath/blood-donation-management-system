@@ -1,6 +1,7 @@
 // src/components/FooterHome.jsx (New File)
 import React from 'react';
 import './FooterHome.css'; // Assuming you put the CSS in a styles folder
+import Hedimg from "../../assets/logo.png";
 
 // You will need to replace '/path/to/blood-drop-logo.png' with the actual path to your image asset.
 
@@ -16,6 +17,7 @@ const FooterHome = () => {
             <button className="feedback-btn">Click Here to send Feedback</button>
           </div>
         </div>
+
         <div className="donate-container">
           <p className="ready-to-save">Ready to save Lives!</p>
           <button className="donate-btn">Donate</button>
@@ -26,7 +28,7 @@ const FooterHome = () => {
       <div className="footer-links-section">
         <div className="footer-logo-area">
           {/* Replace with your blood drop logo */}
-          <img src="/Assets/blood-drop-logo.png" alt="BloodLink Logo" className="footer-drop-logo" />
+          <img src={Hedimg} alt="BloodLink Logo" className="footer-drop-logo" />
           <span className="footer-logo-text">BloodLink</span>
         </div>
         
