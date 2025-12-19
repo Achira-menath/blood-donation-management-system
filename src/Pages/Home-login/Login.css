@@ -127,3 +127,9 @@
   font-size: 12px;
   padding: 16px;
 }
+
+.header-logo {
+  width: 40px;      /* logo width */
+  height: auto;     /* ratio maintain කරගන්න */
+  object-fit: contain;
+}

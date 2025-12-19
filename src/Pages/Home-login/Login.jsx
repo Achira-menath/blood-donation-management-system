@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import Signup from "./Signup.css";
+import logoimg from "../../assets/logo.png";
 
 const Login = () => {
   const [showSignup, setShowSignup] = useState(false);
@@ -11,24 +12,14 @@ const Login = () => {
         {/* Navbar */}
         <header className="navbar">
           <div className="nav-logo">
-            <img 
-            src="D:\sample\blood\public\Assets\logo.png" 
-            alt="Logo"
-            style={{ width: "45px", height: "45px" }}
-          />
+            <img src={logoimg} alt="logo" className="header-logo" />
           <img 
             src="D:\sample\blood\public\Assets\bloodlink.png"
             alt="blood link"
             style={{ height: "32px" }}
           /></div>
           <nav>
-            <ul>
-              <li>Home</li>
-              <li>Search Donor</li>
-              <li>Donate Blood</li>
-              <li>About Us</li>
-              <li>Contact</li>
-            </ul>
+            
           </nav>
         </header>
 
