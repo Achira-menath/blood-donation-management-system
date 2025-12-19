@@ -1,5 +1,6 @@
 import React from "react";
 import "./Signup.css";
+import { Link } from "react-router-dom";
 
 const Signup = ({ close }) => {
   const handleSubmit = (e) => {
@@ -61,9 +62,12 @@ const Signup = ({ close }) => {
             I agree to the terms and conditions
           </label>
 
+          <Link to="/signupthank">
           <button type="submit" className="submit">
             Submit
           </button>
+          </Link>
+          
         </form>
 
         <p className="footer">
