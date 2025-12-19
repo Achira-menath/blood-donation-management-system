@@ -30,11 +30,9 @@ export default function FeedbackThank() {
             <p className="ft-sub">You’re amazing for choosing to help others. We’ll get in touch with you right away with the next steps.</p>
           </div>
         </section>
-
-
       </main>
 
-      <Footer bgColor="#FF0105" opacity={0.3} />
+      <Footer bgColor="#951215" opacity={1} />
     </>
   );
 }

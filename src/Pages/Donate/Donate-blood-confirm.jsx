@@ -56,7 +56,7 @@ export default function FeedbackThank() {
         </div>
       </div>
 
-      <Footer bgColor="#FF0105" opacity={0.3} />
+      <Footer bgColor="#951215" opacity={1} />
     </>
   );
 }

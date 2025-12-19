@@ -75,7 +75,7 @@ export default function RegisterSuccess() {
         </div>
       </section>
 
-      <Footer />
+      <Footer bgColor="#951215" opacity={1} />
     </>
   );
 }
