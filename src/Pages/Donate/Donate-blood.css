@@ -1,20 +1,28 @@
+/* ========================= */
+/* Donate Page Wrapper */
+/* ========================= */
+
 .donate-page {
-  padding: 36px 24px 60px;
+  padding: 36px 0 0; /* CHANGED: Set to 0 to allow full-width banners to touch edges */
   background: #ffffff;
   min-height: calc(100vh - 160px);
+  overflow-x: hidden; /* Prevents horizontal scroll from 100vw banners */
 }
 
 .donate-card {
   max-width: 1180px;
   margin: 0 auto;
-  background: #fff;
-  border-radius: 6px;
+  /* MODIFIED: Removed background, border-radius, and box-shadow to remove the "frame" */
+  background: transparent; 
+  box-shadow: none;
   padding: 34px 28px 20px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
   position: relative;
 }
 
-/* back button (top-left) */
+/* ========================= */
+/* Back Button */
+/* ========================= */
+
 .back-btn {
   background: #fff;
   border: 1px solid #f3bdbd;
@@ -30,21 +38,26 @@
   box-shadow: none;
 }
 
-/* main content: form left, illustration right */
+/* ========================= */
+/* Main Content */
+/* ========================= */
+
 .donate-content {
   display: grid;
-  grid-template-columns: 1fr 460px; /* left form, right image */
+  grid-template-columns: 1fr 460px;
   gap: 32px;
-  align-items: start; /* align image to top of form */
+  align-items: start;
 }
 
-/* form column */
+/* ========================= */
+/* Form Column */
+/* ========================= */
+
 .donate-form {
-  max-width: 560px; /* was 620px */
+  max-width: 560px;
   padding-right: 6px;
 }
 
-/* heading + subtitle styled like screenshot */
 .donate-form h2 {
   color: #e00000;
   margin: 0 0 8px;
@@ -60,13 +73,16 @@
   text-align: left;
 }
 
-/* labels and inputs */
+/* ========================= */
+/* Labels & Inputs */
+/* ========================= */
+
 .donate-form label {
   display: block;
   margin-bottom: 12px;
   font-size: 12px;
   color: #333;
-  text-align: left; /* added */
+  text-align: left;
 }
 
 .donate-form input[type="text"],
@@ -76,7 +92,7 @@
   height: 36px;
   padding: 8px 12px;
   border-radius: 8px;
-  border: 1.6px solid #f3bdbd; /* pinkish border */
+  border: 1.6px solid #f3bdbd;
   outline: none;
   box-sizing: border-box;
   margin-top: 6px;
@@ -90,10 +106,13 @@
 }
 
 .donate-form input:focus {
-  box-shadow: 0 0 0 4px rgba(224,0,0,0.06);
+  box-shadow: 0 0 0 4px rgba(224, 0, 0, 0.06);
 }
 
-/* small note text under inputs */
+/* ========================= */
+/* Note & Submit Button */
+/* ========================= */
+
 .note {
   font-size: 12px;
   color: #666;
@@ -101,7 +120,6 @@
   text-align: left;
 }
 
-/* submit button: white with red border, centered */
 .submit-btn {
   display: block;
   margin: 12px auto 0;
@@ -114,60 +132,96 @@
   cursor: pointer;
 }
 
-/* RIGHT illustration (your donated image) */
+/* ========================= */
+/* Illustration */
+/* ========================= */
+
 .donate-illustration {
-  position: absolute;  /* anchor inside .donate-card */
-  top: 34px;           /* matches .donate-card padding-top */
-  right: 28px;         /* matches .donate-card padding-right */
+  position: absolute;
+  top: 34px;
+  right: 28px;
   width: 460px;
   max-width: 460px;
   display: flex;
   align-items: flex-start;
-  padding-top: 0;
   justify-content: flex-end;
-  pointer-events: none; /* image won't capture clicks */
+  pointer-events: none;
 }
 
 .donate-illustration img {
   width: 100%;
   height: auto;
-  display: block;
-  max-height: 520px; /* keep it large like screenshot */
+  max-height: 520px;
   object-fit: contain;
 }
 
-/* stats strip that sits under the form and image */
-.donate-stats {
-  margin-top: 24px;
+/* ========================= */
+/* Stats Section */
+/* ========================= */
+
+.about-stats {
+  margin-top: 32px;
+  margin-bottom: 0 !important; 
+  
+  background-color: #4a4a4a;
+  color: #ffffff;
   display: flex;
-  gap: 18px;
-  justify-content: space-between;
-  align-items: center;
-  background: #3d3d3d; /* dark strip like screenshot */
-  color: #fff;
-  padding: 18px 22px;
-  border-radius: 6px;
+  justify-content: space-evenly;
+  padding: 35px 0;
+  
+  /* Full-width updates */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  border-radius: 0;
 }
 
-.stat {
+.about-stats div {
   text-align: center;
-  flex: 1 1 120px;
-  min-width: 120px;
 }
 
-.stat .number {
+/* Removes the gap between text lines */
+.about-stats div * {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.about-stats h2 {
+  font-size: 22px;
   font-weight: 800;
-  font-size: 20px;
-  color: #fff;
+  margin: 0;
 }
 
-.stat .label {
+.about-stats p {
   font-size: 12px;
-  color: #f1f1f1;
   margin-top: 6px;
+  color: #f1f1f1;
 }
 
-/* mobile: stack */
+/* ========================= */
+/* Footer Gap Fix */
+/* ========================= */
+
+footer, .footer {
+  margin-top: 0 !important;
+  display: block;
+  /* MODIFIED: Ensure footer also spans full width to match banner */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+/* ========================= */
+/* Mobile Responsive */
+/* ========================= */
+
 @media (max-width: 860px) {
   .donate-content {
     grid-template-columns: 1fr;
@@ -177,20 +231,29 @@
   .donate-illustration {
     position: static;
     order: -1;
-    max-width: none;
     width: 100%;
-    justify-self: center;
-    padding-top: 0;
     pointer-events: auto;
+    margin-bottom: 14px;
   }
 
   .donate-form {
     max-width: 100%;
   }
+
+  .about-stats {
+    flex-direction: column;
+    gap: 18px;
+    padding: 24px 0;
+    margin-left: -50vw;
+    width: 100vw;
+  }
 }
 
-/* small visual polish */
+/* ========================= */
+/* Small Visual Polish */
+/* ========================= */
+
 .donate-card,
-.donate-stats {
+.about-stats {
   transition: all 140ms ease;
 }
