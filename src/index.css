@@ -17,3 +17,9 @@ html, body, #root {
   overflow: hidden;  /* this stops <h1> top margin from collapsing */
   padding-top: 0;    /* optional: ensures flush with header */
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #030000; /* same as footer */
+}

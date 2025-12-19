@@ -1,40 +1,33 @@
 import React from "react";
-import "./Footer.css";
 
 /**
- * Site Footer matching Figma design
- * Shows a stats strip and a red copyright bar
+ * Reusable Footer Component
+ * @param {string} bgColor - Background color
+ * @param {number} opacity - Opacity value (0 to 1)
+ * @param {string} text - Footer text
  */
 const Footer = ({
-  bgColor = "#B21212", // bottom bar default (overrideable by pages)
-  opacity = 1,
-  copyright = "Copyright © 2025 – National Blood Transfusion Service – All Rights Reserved",
-  showStats = true, // control whether the top stats strip is shown
+  bgColor = "#FF0105",
+  opacity = 0.5,
+  text = "Copyright © 2025 – National Blood Transfusion Service – All Rights Reserved",
 }) => {
-  const stats = [
-    { value: "10,000+", label: "Registered Donor" },
-    { value: "500+", label: "Partner Hospital" },
-    { value: "50,000+", label: "Lives Saved" },
-    { value: "5 min", label: "Average Response Time" },
-  ];
-
   return (
-    <footer className="site-footer">
-      {showStats && (
-        <div className="footer-stats">
-          <div className="footer-stats-inner">
-            {stats.map((s) => (
-              <div className="stat-item" key={s.label}>
-                <div className="stat-value">{s.value}</div>
-                <div className="stat-label">{s.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      <div className="footer-bottom" style={{ backgroundColor: bgColor, opacity }}>
-        <div className="footer-bottom-inner">{copyright}</div>
+    <footer style={{ width: "100%" }}>
+      <div
+        style={{
+          backgroundColor: bgColor,
+          opacity: opacity,
+          color: "white",              // ✅ white text
+          padding: "10px 0",           // give some vertical room for the text
+          display: "flex",             // ✅ center text
+          alignItems: "center",         // vertical center
+          justifyContent: "center",     // horizontal center
+          textAlign: "center",
+          fontSize: "14px",
+          borderRadius: 0,               // flush edge-to-edge
+        }}
+      >
+        {text}
       </div>
     </footer>
   );
