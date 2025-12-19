@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 import "./Home-page.css"; //
 // Header සහ Home-page දෙකම එකම folder එකේ නිසා මෙහෙම import කරන්න
 import Header from "./Header"; 
@@ -6,6 +7,13 @@ import heroImg from "../../assets/home.png"; //
 import www from "../../assets/www.png";   //
 import bld from "../../assets/BLD.png";       //
 
+=======
+import { Link } from "react-router-dom";
+import "../Home-login/Home-page.css";
+import heroImg from "../../assets/home.png"; // your main illustration
+import logo from "../../assets/logo.png";   // BloodLink logo
+import bld from"../../assets/BLD.png";
+>>>>>>> 1a44b9c0f66d604feb095466e95b6d9bc1ab3188
 const HomePage = () => {
   return (
     <div className="homepage">
@@ -59,7 +67,27 @@ const HomePage = () => {
       {/* CTA SECTION */}
       <section className="cta">
         <img src={bld} alt="bld" className="cta-logo"/>
+<<<<<<< HEAD
         <p className="cta-text">Connecting Hearts · Saving Lives · Every drop counts</p>
+=======
+        
+        <p>Connecting Hearts · Saving Lives · Every drop counts</p>
+
+        <div className="cta-actions">
+          <div className="feedback">
+            <p>Share your experience with us!</p>
+            <Link to="/Feedback">
+            <button className="outline-btn">Click Here to send Feedback</button>
+            </Link>
+            
+          </div>
+
+          <div className="donate">
+            <p>Ready to save lives!</p>
+            <button className="donate-btn">Donate</button>
+          </div>
+        </div>
+>>>>>>> 1a44b9c0f66d604feb095466e95b6d9bc1ab3188
       </section>
 
       {/* FOOTER */}

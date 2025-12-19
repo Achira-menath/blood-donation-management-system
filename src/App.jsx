@@ -13,6 +13,7 @@ import Login from "./Pages/Home-login/Login";
 import Signup from "./Pages/Home-login/Signup";
 import Feedback from "./Pages/Feedback/Contact-feedback";
 import Feedbackthanks from "./Pages/Feedback/feedback-thank";
+import Donatebloodconfirm from "./Pages/Donate/Donateconfirm";
 
 
 
@@ -32,7 +33,8 @@ function App() {
         <Route path="/Signup" element={<Signup />} />
         <Route path="/Feedback" element={<Feedback />} />
         <Route path="/Feedbackthanks" element={<Feedbackthanks />} />
-        
+        <Route path="/Donateconfirm" element={<Donatebloodconfirm />} />
+    
 
       </Routes>
     </BrowserRouter>
