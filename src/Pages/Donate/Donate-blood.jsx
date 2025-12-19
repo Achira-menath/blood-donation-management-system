@@ -76,24 +76,7 @@ export default function DonateBlood() {
             </div>
           </div>
 
-          <div className="donate-stats">
-            <div className="stat">
-              <div className="number">10,000+</div>
-              <div className="label">Registered Donor</div>
-            </div>
-            <div className="stat">
-              <div className="number">500+</div>
-              <div className="label">Partner Hospital</div>
-            </div>
-            <div className="stat">
-              <div className="number">50,000+</div>
-              <div className="label">Lives Saved</div>
-            </div>
-            <div className="stat">
-              <div className="number">5 min</div>
-              <div className="label">Average Response Time</div>
-            </div>
-          </div>
+s
         </div>
       </div>
 
