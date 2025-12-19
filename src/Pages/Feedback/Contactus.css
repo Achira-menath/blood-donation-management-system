@@ -27,16 +27,16 @@
 
 /* Image */
 .contact-image img {
-  max-width: 420px;
+  max-width: 460px;
   height: auto;
 }
 
 /* Card */
 .contact-card {
   background: #cfcfcf;
-  padding: 40px;
+  padding: 60px;
   border-radius: 30px;
-  width: 360px;
+  width: 380px;
 }
 
 .contact-card h2 {

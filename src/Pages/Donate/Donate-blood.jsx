@@ -21,9 +21,10 @@ export default function DonateBlood() {
     <>
       <HeaderMain />
 
-      <div className="donate-page">
-        {/* ================= Card Section ================= */}
+      <br />
+      <br />
         <div className="donate-card">
+          
           <button
             type="button"
             className="back-btn"
@@ -106,8 +107,12 @@ export default function DonateBlood() {
             </div>
           </div>
         </div>
-
-       {/* Stats Bar */}
+      <br />
+      <br />
+      <br />
+    
+      
+      {/* Stats Bar */}
         <div className="contact-stats">
           <div>
             <h3>10,000+</h3>
@@ -126,8 +131,6 @@ export default function DonateBlood() {
             <p>Average Response Time</p>
           </div>
         </div>
-      </div>
-      
 
       <Footer bgColor="#951215" opacity={1} />
     </>

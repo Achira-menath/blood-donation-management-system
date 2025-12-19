@@ -10,7 +10,7 @@
   border: 1px solid #e53935;
   background: transparent;
   color: #e53935;
-  padding: 5px 14px;
+  padding: 3px 14px;
   border-radius: 18px;
   font-size: 12px;
   cursor: pointer;
@@ -21,8 +21,9 @@
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  gap: 60px;
-  padding: 40px 20px 20px;
+  gap: 6px;
+  padding: 0px 20px 20px;
+  align-content: center;
 }
 
 /* Text Section */
@@ -73,7 +74,7 @@
 }
 
 .about-image img {
-  max-width: 360px;
+  max-width: 560px;
   height: auto;
 }
 

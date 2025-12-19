@@ -31,6 +31,10 @@ export default function FeedbackThank() {
           </div>
         </section>
       </main>
+      <br />
+      <br />
+      <br />
+
        {/* Stats Bar */}
         <div className="contact-stats">
           <div>

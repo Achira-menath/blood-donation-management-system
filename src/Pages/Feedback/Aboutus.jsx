@@ -8,10 +8,8 @@ export default function AboutUs() {
   return (
     <>
       <HeaderMain />
-      <div className="about-container">
       
       <button className="back-btn">Back Home</button>
-
       <div className="about-content">
         
         {/* Left Content */}
@@ -54,14 +52,13 @@ export default function AboutUs() {
           </p>
         </div>
 
-        {/* Right Image */}
         <div className="about-image">
           <img src={aboutImg} alt="About BloodLink" />
         </div>
 
       </div>
-{/* Stats Bar */}
-        <div className="contact-stats">
+    
+    <div className="contact-stats">
           <div>
             <h3>10,000+</h3>
             <p>Registered Donor</p>
@@ -79,8 +76,6 @@ export default function AboutUs() {
             <p>Average Response Time</p>
           </div>
         </div>
-
-    </div>
       <Footer bgColor="#951215" opacity={1} />
     </>
   );

@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <>
       <HeaderMain />
-      <div className="contact-container">
+      
 
         <button className="back-btn">Back Home</button>
 
@@ -35,11 +35,11 @@ export default function Contact() {
             <div className="contact-photo">
               <img src={contactus2Photo} alt="Contact illustration" />
             </div>
-          </div> {/* <- Closed the contact-card div here */}
+          </div>
 
         </div>
-
-        {/* Stats Bar */}
+      
+       {/* Stats Bar */}
         <div className="contact-stats">
           <div>
             <h3>10,000+</h3>
@@ -58,8 +58,6 @@ export default function Contact() {
             <p>Average Response Time</p>
           </div>
         </div>
-
-      </div>
       <Footer bgColor="#951215" opacity={1} />
     </>
   );
