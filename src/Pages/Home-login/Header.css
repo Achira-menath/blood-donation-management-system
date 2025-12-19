@@ -1,50 +1,68 @@
-/* src/styles/Header.css (New File) */
 .home-header {
-  background-color: #ffffff;
-  padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 50px;
+  background-color: #F0F0F0; /* ලා අළු පැහැති පසුබිමක් */
+  
+  /* යටින් රතු පාට ලයින් එක සහ shadow එක */
+  border-bottom: 3px solid #ff4d4d; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  position: sticky; /* scroll කරද්දී උඩම රැඳී තිබීමට */
+  top: 0;
+  z-index: 1000;
 }
 
 .home-logo-container {
   display: flex;
   align-items: center;
-  gap: 20px;
-  
+  gap: 10px;
 }
 
 .header-logo {
-  width: 40px;      /* logo width */
-  height: auto;     /* ratio maintain කරගන්න */
-  object-fit: contain;
+  height: 50px;
+  width: auto;
 }
-
-
 
 .logo-text {
   font-size: 24px;
-  font-weight: 700;
-  color: #D32F2F; /* Blood red color */
+  font-weight: bold;
+  color: #ff4d4d;
+  font-family: 'Arial', sans-serif;
 }
 
-.header-buttons button {
-  padding: 8px 18px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  margin-left: 10px;
+.header-buttons {
+  display: flex;
+  gap: 15px;
 }
 
+/* Log in Button Style */
 .log-in-btn {
-  background-color: #D32F2F;
-  color: white;
-  border: 2px solid #D32F2F;
-}
-
-.sign-up-btn {
-  background-color: #D32F2F;
+  background-color: #ff4d4d;
   color: white;
   border: none;
+  padding: 8px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Sign up Button Style */
+.sign-up-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.log-in-btn:hover, .sign-up-btn:hover {
+  background-color: #e60000;
+  transform: scale(1.05);
+  
 }
