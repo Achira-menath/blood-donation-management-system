@@ -15,7 +15,7 @@ const Signup = ({ close }) => {
 
       <div className="overlay" onClick={close}>
         <div className="signup-card" onClick={(e) => e.stopPropagation()}>
-          <div className="logo">🩸</div>
+          
 
           <form onSubmit={handleSubmit}>
             <div className="row">
@@ -71,10 +71,7 @@ const Signup = ({ close }) => {
             </Link>
           </form>
 
-          <p className="footer">
-            If you are registered please
-            <span onClick={close}> Login</span>
-          </p>
+        
         </div>
       </div>
     </div>
