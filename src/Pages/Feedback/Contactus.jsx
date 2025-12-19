@@ -60,7 +60,7 @@ export default function Contact() {
         </div>
 
       </div>
-      <Footer bgColor="#FF0105" opacity={0.5} />
+      <Footer bgColor="#951215" opacity={1} />
     </>
   );
 }

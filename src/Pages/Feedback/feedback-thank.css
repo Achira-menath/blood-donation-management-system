@@ -1,105 +1,142 @@
 /* Container */
-.ft-container{
-  padding: 30px 20px 0;
-  background: #fff;
+.ft-container {
   max-width: 1200px;
-  margin: 0 auto; /* center the page content */
-  position: relative; /* allow absolutely positioned Back button */
+  margin: 0 auto;
+  padding: 20px 20px 40px;
+  background: #fff;
+  position: relative;
+  min-height: 50vh;
 }
 
-/* Back button positioned at the left edge of the content area */
-.ft-back{
-  position: absolute;
-  left: -99px; /* align with container padding */
-  top: 18px;
-  display:inline-block;
-  background:#fff;
-  color:#111;
-  border:2px solid #f1c6c6;
-  padding:10px 28px; /* more horizontal padding for the pill look */
-  border-radius:28px; /* bigger radius for smooth pill */
-  cursor:pointer;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03), 0 0 0 6px rgba(241,198,198,0.06);
-  transition: transform .12s ease, box-shadow .12s ease;
-  font-size:16px;
+/* Back Button - Figma Pill Style */
+.ft-back {
+  background: #fff;
+  color: #111;
+  border: 2px solid #f1c6c6;
+  padding: 8px 24px;
+  border-radius: 28px;
+  cursor: pointer;
+  font-weight: 700;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
 }
 
-.ft-back:hover{
+.ft-back:hover {
+  background: #fff5f5;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08), 0 0 0 8px rgba(241,198,198,0.06);
 }
 
-@media (max-width:420px){
-  .ft-back{ left: 12px; top: 12px; padding:8px 20px; font-size:14px }
+/* Top Header Section */
+.ft-top-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
-/* Hero area - centered and balanced */
-.ft-hero{
-  display:flex;
-  gap:40px;
-  align-items:center;
-  justify-content:center;
-  margin-top:28px;
-  min-height: 420px; /* taller so the check and text sit centered vertically */
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
 }
 
-.ft-left{
-  flex: 0 0 520px; /* fixed visual column for illustration */
-  display:flex;
-  justify-content:flex-start;
+.header-text h1 {
+  font-size: 48px;
+  color: #ff1a1a; /* Red color from Figma */
+  margin: 0;
+  font-weight: 800;
 }
 
-.ft-left img{max-width:480px; width:100%; height:auto; display:block}
-
-.ft-right{
-  flex: 0 0 640px; /* wider column for centered message */
-  display:flex;
-  flex-direction:column;
-  align-items:center; /* center the check and text */
-  justify-content:center;
-  gap:18px;
-  text-align:center;
+.header-text p {
+  font-size: 16px;
+  color: #444;
+  margin: 5px 0 0;
+  font-weight: 600;
 }
 
-.ft-check{display:flex; align-items:center; justify-content:center}
-.ft-check svg{width:96px; height:96px}
-
-.ft-title{font-size:26px; color:#333; margin:0; font-weight:700}
-.ft-sub{font-size:18px; color:#444; margin:0; max-width:640px; line-height:1.6; text-align:center}
-
-/* Stats bar - flush */
-.ft-stats{
-  margin-top:30px;
-  margin-left:-60px;
-  margin-right:-60px;
-  background:#3a3a3a;
-  color:white;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding: 10px 60px;
-  border-radius:0;
-  width: calc(100% + 120px);
-  box-sizing: border-box;
+/* Hero Section */
+.ft-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
 }
 
-.ft-stats .stat{text-align:left}
-.ft-stats .stat h3{margin:0; font-size:26px}
-.ft-stats .stat p{margin:4px 0 0 0; color:#ddd}
-
-/* Footer spacing note: keep footer flush and compact (Footer.jsx has padding 10px) */
-
-/* Responsive */
-@media (max-width:1000px){
-  .ft-hero{flex-direction:column; gap:18px}
-  .ft-left{order:2}
-  .ft-right{order:1; align-items:center; text-align:center}
-  .ft-sub{max-width:600px}
+.ft-right {
+  flex: 1;
+  text-align: center;
 }
 
-@media (max-width:420px){
-  .ft-container{padding:20px}
-  .ft-stats{margin-left:0; margin-right:0; padding:16px; width:100%}
-  .ft-title{font-size:22px}
-  .ft-sub{font-size:15px}
+.ft-check svg {
+  width: 100px;
+  height: 100px;
+}
+
+.ft-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #222;
+  margin: 20px 0;
+  line-height: 1.1;
+}
+
+.ft-sub {
+  font-size: 18px;
+  color: #555;
+  font-weight: 500;
+}
+
+.ft-left {
+  flex: 1;
+}
+
+.ft-left img {
+  width: 100%;
+  max-width: 550px;
+}
+
+/* Stats Bar - Full Width Auto-fit */
+.about-stats {
+  background-color: #444444; /* Dark grey from Figma */
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+  width: 100%;
+  margin: 0;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.stat-item p {
+  font-size: 18px;
+  margin: 5px 0 0;
+  font-weight: 500;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+  .ft-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-stats {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .header-text h1 {
+    font-size: 32px;
+  }
 }

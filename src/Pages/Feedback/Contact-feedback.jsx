@@ -69,10 +69,27 @@ export default function ContactFeedback() {
           </div>
         </div>
 
-
       </div>
+      <div className="contact-stats">
+          <div>
+            <h3>10,000+</h3>
+            <p>Registered Donor</p>
+          </div>
+          <div>
+            <h3>500+</h3>
+            <p>Partner Hospital</p>
+          </div>
+          <div>
+            <h3>50,000+</h3>
+            <p>Lives Saved</p>
+          </div>
+          <div>
+            <h3>5 min</h3>
+            <p>Average Response Time</p>
+          </div>
+        </div>
 
-      <Footer bgColor="#FF0105" opacity={0.5} />
+      <Footer bgColor="#951215" opacity={1} />
     </>
   );
 }
