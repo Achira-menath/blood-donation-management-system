@@ -1,50 +1,64 @@
-/* src/styles/Header.css (New File) */
+/* src/Pages/Home-login/Header.css */
 .home-header {
-  background-color: #ffffff;
-  padding: 15px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 0px 50px !important; /* උඩ සහ යට padding සම්පූර්ණයෙන්ම ඉවත් කළා */
+  background-color: #F0F0F0 !important; 
+  
+  border-bottom: 2px solid #ff4d4d !important; /* ලයින් එකේ මහත පොඩ්ඩක් අඩු කළා */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+  
+  position: sticky !important; 
+  top: 0 !important;
+  z-index: 1000 !important;
+  min-height: 60px !important; /* Header එකේ උස 60px දක්වා අඩු කළා */
 }
 
 .home-logo-container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  
+  display: flex !important;
+  align-items: center !important;
 }
 
 .header-logo {
-  width: 40px;      /* logo width */
-  height: auto;     /* ratio maintain කරගන්න */
-  object-fit: contain;
+  /* උස 55px දක්වා අඩු කළා, එවිට Header එක කුඩා වේ */
+  height: 55px !important; 
+  width: auto !important;   
+  object-fit: contain !important;
+  display: block !important;
+  margin: 5px 0 !important;
 }
 
-
-
-.logo-text {
-  font-size: 24px;
-  font-weight: 700;
-  color: #D32F2F; /* Blood red color */
+.header-buttons {
+  display: flex !important;
+  gap: 15px !important;
 }
 
-.header-buttons button {
-  padding: 8px 18px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  margin-left: 10px;
-}
-
+/* Log in Button Style */
 .log-in-btn {
-  background-color: #D32F2F;
-  color: white;
-  border: 2px solid #D32F2F;
+  background-color: #ff4d4d !important;
+  color: white !important;
+  border: none !important;
+  padding: 6px 20px !important; /* Button එකේ සයිස් එකත් පොඩ්ඩක් අඩු කළා */
+  border-radius: 20px !important;
+  cursor: pointer !important;
+  font-weight: bold !important;
+  font-size: 14px !important;
 }
 
+/* Sign up Button Style */
 .sign-up-btn {
-  background-color: #D32F2F;
-  color: white;
-  border: none;
+  background-color: #ff4d4d !important;
+  color: white !important;
+  border: none !important;
+  padding: 6px 20px !important; 
+  border-radius: 20px !important;
+  cursor: pointer !important;
+  font-weight: bold !important;
+  font-size: 14px !important;
+}
+
+.log-in-btn:hover, .sign-up-btn:hover {
+  background-color: #e60000 !important;
+  transform: scale(1.05) !important;
 }

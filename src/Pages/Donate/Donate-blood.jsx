@@ -86,8 +86,8 @@ export default function DonateBlood() {
                   We will accept your application and inform you immediately.
                   Thank you.
                 </p>
-
-                <Link to="/Donatebloodconfirm"><button type="submit" className="submit-btn">
+                <Link to="/Donateconfirm">
+                <button type="submit" className="submit-btn">
                   Submit
                 </button>
                 </Link>

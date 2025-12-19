@@ -1,12 +1,16 @@
-
 import React from "react";
+import { Link } from "react-router-dom";
 import "../Home-login/Home-page.css";
+import Header from "./Header";
 import heroImg from "../../assets/home.png"; // your main illustration
-import logo from "../../assets/logo.png";   // BloodLink logo
+import www from "../../assets/www.png";   // BloodLink logo
 import bld from"../../assets/BLD.png";
 const HomePage = () => {
   return (
     <div className="homepage">
+      {/* 1. Header එක මෙතැනට ඇතුළත් කළා */}
+      <Header /> 
+
       {/* HERO SECTION */}
       <section className="hero">
         <div className="hero-left">
@@ -17,13 +21,11 @@ const HomePage = () => {
             unavailability of<br />
             blood.”
           </h1>
-
           <p className="hero-text">
             Blood-link will be the universally recognized, instant, and trusted
             bridge connecting every urgent blood request with a willing, local
             donor.
           </p>
-
           <button className="login-btn">Log in</button>
         </div>
 
@@ -55,46 +57,43 @@ const HomePage = () => {
 
       {/* CTA SECTION */}
       <section className="cta">
-        
         <img src={bld} alt="bld" className="cta-logo"/>
-        
-        <p>Connecting Hearts · Saving Lives · Every drop counts</p>
+        <p className="cta-text">Connecting Hearts · Saving Lives · Every drop counts</p>
 
-        <div className="cta-actions">
-          <div className="feedback">
-            <p>Share your experience with us!</p>
-            <button className="outline-btn">Click Here to send Feedback</button>
-          </div>
-
-          <div className="donate">
-            <p>Ready to save lives!</p>
-            <button className="donate-btn">Donate</button>
-          </div>
-        </div>
       </section>
 
       {/* FOOTER */}
       <footer className="footer">
-        <div className="footer-left">
-          <img src={logo} alt="BloodLink" className="droplo"/>
+        <div className="cta-actions">
+          <div className="feedback-box">
+            <p>Share your experience with us!</p>
+            <Link to="/Feedback">
+            <button className="outline-btn">Click Here to send Feedback</button>
+            </Link>
+          </div>
+          <div className="donate-box">
+            <p>Ready to save lives!</p>
+            <button className="donate-btn">Donate</button>
+          </div>
+          <img src={www} className="droplo" alt="Logo" />
         </div>
 
         <div className="footer-links">
-          <div>
+          <div className="footer-col">
             <h4>Services</h4>
             <p>Donor Services</p>
             <p>Collection Services</p>
             <p>Campaigns</p>
             <p>Request Handling</p>
           </div>
-          <div>
+          <div className="footer-col">
             <h4>About</h4>
             <p>Our Story</p>
             <p>Benefits</p>
             <p>Team</p>
             <p>Mission</p>
           </div>
-          <div>
+          <div className="footer-col">
             <h4>Help</h4>
             <p>FAQs</p>
             <p>Contact Us</p>
@@ -111,4 +110,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-
