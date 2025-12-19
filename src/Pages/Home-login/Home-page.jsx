@@ -1,5 +1,5 @@
-
 import React from "react";
+import { Link } from "react-router-dom";
 import "../Home-login/Home-page.css";
 import heroImg from "../../assets/home.png"; // your main illustration
 import logo from "../../assets/logo.png";   // BloodLink logo
@@ -63,7 +63,10 @@ const HomePage = () => {
         <div className="cta-actions">
           <div className="feedback">
             <p>Share your experience with us!</p>
+            <Link to="/Feedback">
             <button className="outline-btn">Click Here to send Feedback</button>
+            </Link>
+            
           </div>
 
           <div className="donate">

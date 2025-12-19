@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import HeaderMain from "../../components/HeaderMain";
 import Footer from "../../components/Footer";
 import "./Donate-blood.css";
@@ -85,10 +86,12 @@ export default function DonateBlood() {
                   We will accept your application and inform you immediately.
                   Thank you.
                 </p>
-
+                <Link to="/Donateconfirm">
                 <button type="submit" className="submit-btn">
                   Submit
                 </button>
+                </Link>
+                
               </form>
             </div>
 
