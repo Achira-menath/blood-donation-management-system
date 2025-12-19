@@ -2,6 +2,7 @@ import React from "react";
 import HeaderMain from "../../components/HeaderMain";
 import Footer from "../../components/Footer";
 import "./feedback-thank.css"; 
+import { Link } from "react-router-dom";
 import hero from "../../assets/feedback-thank2.png";
 
 
@@ -12,7 +13,10 @@ export default function FeedbackThank() {
 
       <main className="ft-container">
         {/* Back Button */}
+        <Link to="/home">
         <button className="ft-back">Back Home</button>
+        </Link>
+        
 
         {/* 1. Contact & Feedback Header Section */}
         <section className="ft-top-header">

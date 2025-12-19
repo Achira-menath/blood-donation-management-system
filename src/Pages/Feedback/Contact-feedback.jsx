@@ -11,7 +11,10 @@ export default function ContactFeedback() {
       <HeaderMain />
 
       <div className="cf-container">
+        <Link to="/home">
         <button className="cf-back">Back Home</button>
+        </Link>
+        
 
         <div className="cf-main">
           <div className="cf-left">

@@ -1,6 +1,7 @@
 import React from "react";
 import HeaderMain from "../../components/HeaderMain";
 import Footer from "../../components/Footer";
+import { Link } from "react-router-dom";
 import "./Contactus.css";
 import contactus from "../../assets/contactus.png"; // your PNG
 import contactus2Photo from "../../assets/contactus2.png"; // your second PNG
@@ -10,8 +11,10 @@ export default function Contact() {
     <>
       <HeaderMain />
       
-
+        <Link to="/home">
         <button className="back-btn">Back Home</button>
+        </Link>
+        
 
         <div className="contact-content">
 

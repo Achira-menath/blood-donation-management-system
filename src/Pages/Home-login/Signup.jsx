@@ -1,7 +1,8 @@
 import React from "react";
 import "./Signup.css";
 import { Link } from "react-router-dom";
-import Headerblank from "../../components/Headerblank"; // හරියටම path එක බලන්න
+import Headerblank from "../../components/Headerblank";
+import Footer from "../../components/Footer";
 
 const Signup = ({ close }) => {
   const handleSubmit = (e) => {
@@ -74,6 +75,43 @@ const Signup = ({ close }) => {
         
         </div>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      
+    
+      <Footer bgColor="#000000ff" opacity={1} />
     </div>
   );
 };

@@ -3,13 +3,16 @@ import HeaderMain from "../../components/HeaderMain";
 import Footer from "../../components/Footer";
 import "./Aboutus.css";
 import aboutImg from "../../assets/Aboutus.png";
+import { Link } from "react-router-dom";
 
 export default function AboutUs() {
   return (
     <>
       <HeaderMain />
-      
+      <Link to="/home">
       <button className="back-btn">Back Home</button>
+      </Link>
+      
       <div className="about-content">
         
         {/* Left Content */}

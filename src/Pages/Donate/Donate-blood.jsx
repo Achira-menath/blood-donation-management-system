@@ -24,8 +24,8 @@ export default function DonateBlood() {
       <br />
       <br />
         <div className="donate-card">
-          
-          <button
+           <Link to="/">
+           <button
             type="button"
             className="back-btn"
             onClick={() => window.history.back()}
@@ -41,6 +41,8 @@ export default function DonateBlood() {
             </svg>
             Back Home
           </button>
+           </Link>
+          
 
           <div className="donate-content">
             <div className="donate-form">

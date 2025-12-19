@@ -41,7 +41,7 @@ export default function ViewProfile() {
           </div>
 
           <div className="header-buttons">
-            <Link to="/">
+            <Link to="/home">
             <button className="outline-btn">Back Home</button>
             </Link>
             <Link to="/Editprofile">

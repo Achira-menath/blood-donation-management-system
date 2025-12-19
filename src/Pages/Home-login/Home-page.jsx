@@ -6,6 +6,7 @@ import heroImg from "../../assets/home.png";
 import www from "../../assets/www.png";   
 import bld from"../../assets/BLD.png";
 import giveBloodImg from "../../assets/give-blood.png"; 
+import Footer from "../../components/Footer";
 
 const HomePage = () => {
   return (
@@ -32,7 +33,10 @@ const HomePage = () => {
           
           {/* අලුතින් එකතු කළ රූපය */}
           <img src={giveBloodImg} alt="Give Blood Save Life" className="give-blood-side-img" />
-          <button className="login-btn">Log in</button>
+           <Link to="/Login">
+           <button className="login-btn">Log in</button>
+           </Link>
+          
         </div>
         
         <div className="hero-right">
@@ -79,7 +83,10 @@ const HomePage = () => {
           </div>
           <div className="donate-box">
             <p>Ready to save lives!</p>
+            <Link to="/Donate">
             <button className="donate-btn">Donate</button>
+            </Link>
+            
           </div>
           <img src={www} className="droplo" alt="Logo" />
         </div>
@@ -111,6 +118,7 @@ const HomePage = () => {
           <p>Privacy Policy</p>
         </div>
       </footer>
+      <Footer bgColor="#951215" opacity={1} />
     </div>
   );
 };

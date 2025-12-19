@@ -51,8 +51,10 @@ export default function RegisterSuccess() {
             <input type="password" placeholder="Password" />
 
             <span className="rs-forgot">Forgot password?</span>
-
+            <Link to="/home">
             <button className="rs-btn">Login</button>
+            </Link>
+            
           </div>
 
         </div>

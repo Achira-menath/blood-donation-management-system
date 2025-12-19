@@ -5,6 +5,7 @@ import Headerblank from "../../components/Headerblank";
 import loginImg from "../../assets/login.png";
 import Footer from "../../components/Footer";
 import bloodDrop from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 import bloodlinkLogo from "../../assets/bloodlink.png";
 
 const Login = () => {
@@ -29,8 +30,10 @@ const Login = () => {
           <input type="password" placeholder="Password" />
 
           <div className="forgot">Forgot password?</div>
-
+          <Link to="/home">
           <button className="login-btn">Login</button>
+          </Link>
+          
 
           <p className="signup-text">
             If you are not Registered please Sign up.

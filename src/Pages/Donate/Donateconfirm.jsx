@@ -3,6 +3,7 @@ import HeaderMain from "../../components/HeaderMain";
 import Footer from "../../components/Footer";
 import "./Donateconfirm.css";
 import hero from "../../assets/feedback-thank.png";
+import { Link } from "react-router-dom";
 
 export default function FeedbackThank() {
   return (
@@ -10,7 +11,10 @@ export default function FeedbackThank() {
       <HeaderMain />
 
       <main className="ft-container">
-        <button className="ft-back">Back Home</button>
+        <Link to="/">
+         <button className="ft-back">Back Home</button>
+        </Link>
+       
 
         <section className="ft-hero">
           <div className="ft-left">

@@ -19,7 +19,7 @@ export default function HeaderMain() {
     {/* RIGHT: Nav + Profile */}
     <div className="right-section">
       <nav className="nav-links">
-        <Link to="/">Home</Link>
+        <Link to="/home">Home</Link>
         <Link to="/search">Search Donor</Link>
         <Link to="/donate">Donate Blood</Link>
         <Link to="/about">About Us</Link>

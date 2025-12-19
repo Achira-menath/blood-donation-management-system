@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Beforehome from "./Pages/Home-login/Home-page";
 import Home from "./Pages/Home-login/Home-page-AL";
 import SearchDonor from "./Pages/Search-doner/Search-doner";
 import DonateBlood from "./Pages/Donate/Donate-blood";
@@ -21,7 +22,8 @@ function App() {
   return (
     <BrowserRouter basename="/blood-donation-management-system">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Beforehome />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/search" element={<SearchDonor />} />
         <Route path="/donate" element={<DonateBlood />} />
         <Route path="/about" element={<AboutUs />} />
