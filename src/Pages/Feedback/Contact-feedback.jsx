@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import HeaderMain from "../../components/HeaderMain";
 import Footer from "../../components/Footer";
 import "./Contact-feedback.css";
@@ -54,7 +55,9 @@ export default function ContactFeedback() {
               </div>
 
               <div className="cf-submit-row">
+                <Link to="/Feedbackthanks">
                 <button className="cf-submit">Submit Feedback</button>
+                </Link>
               </div>
             </form>
           </div>
