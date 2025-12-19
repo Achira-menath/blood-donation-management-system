@@ -1,6 +1,7 @@
 import React from "react";
 import "./Signup.css";
 import { Link } from "react-router-dom";
+import Headerblank from "../../components/Headerblank"; // හරියටම path එක බලන්න
 
 const Signup = ({ close }) => {
   const handleSubmit = (e) => {
@@ -8,72 +9,73 @@ const Signup = ({ close }) => {
   };
 
   return (
-    <div className="overlay" onClick={close}>
-      <div
-        className="signup-card"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div className="logo">🩸</div>
+    <div className="signup-wrapper">
+      {/* පිටුවේ ඉහළින්ම header එක පෙන්වයි */}
+      <Headerblank />
 
-        <form onSubmit={handleSubmit}>
-          <div className="row">
-            <input type="text" placeholder="First Name" required />
-            <input type="text" placeholder="Last Name" required />
-          </div>
+      <div className="overlay" onClick={close}>
+        <div className="signup-card" onClick={(e) => e.stopPropagation()}>
+          <div className="logo">🩸</div>
 
-          <div className="row">
-            <input type="date" required />
-            <input type="text" placeholder="Address" required />
-          </div>
+          <form onSubmit={handleSubmit}>
+            <div className="row">
+              <input type="text" placeholder="First Name" required />
+              <input type="text" placeholder="Last Name" required />
+            </div>
 
-          <div className="row">
-            <input type="tel" placeholder="Phone Number" required />
-            <select required>
-              <option value="">Blood Group</option>
-              <option>A+</option>
-              <option>A-</option>
-              <option>B+</option>
-              <option>B-</option>
-              <option>O+</option>
-              <option>O-</option>
-              <option>AB+</option>
-              <option>AB-</option>
-            </select>
-          </div>
+            <div className="row">
+              <input type="date" required />
+              <input type="text" placeholder="Address" required />
+            </div>
 
-          <div className="row">
-            <input type="text" placeholder="State" required />
-            <input type="number" placeholder="Age" required />
-          </div>
+            <div className="row">
+              <input type="tel" placeholder="Phone Number" required />
+              <select required>
+                <option value="">Blood Group</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>O+</option>
+                <option>O-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+              </select>
+            </div>
 
-          <div className="row">
-            <input type="text" placeholder="District" required />
-            <input type="password" placeholder="Password" required />
-          </div>
+            <div className="row">
+              <input type="text" placeholder="State" required />
+              <input type="number" placeholder="Age" required />
+            </div>
 
-          <input
-            className="full"
-            type="date"
-            placeholder="Last Donation Date"
-          />
+            <div className="row">
+              <input type="text" placeholder="District" required />
+              <input type="password" placeholder="Password" required />
+            </div>
 
-          <label className="checkbox">
-            <input type="checkbox" required />
-            I agree to the terms and conditions
-          </label>
+            <input
+              className="full"
+              type="date"
+              placeholder="Last Donation Date"
+            />
 
-          <Link to="/signupthank">
-          <button type="submit" className="submit">
-            Submit
-          </button>
-          </Link>
-          
-        </form>
+            <label className="checkbox">
+              <input type="checkbox" required />
+              I agree to the terms and conditions
+            </label>
 
-        <p className="footer">
-          If you are registered please
-          <span onClick={close}> Login</span>
-        </p>
+            <Link to="/signupthank">
+              <button type="submit" className="submit">
+                Submit
+              </button>
+            </Link>
+          </form>
+
+          <p className="footer">
+            If you are registered please
+            <span onClick={close}> Login</span>
+          </p>
+        </div>
       </div>
     </div>
   );

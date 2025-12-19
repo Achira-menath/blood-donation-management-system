@@ -12,6 +12,11 @@
   flex-direction: column;
 }
 
+.login-illustration{
+  width: 500px;
+  height: auto;
+}
+
 /* Navbar */
 .navbar {
   background: #ffffff;

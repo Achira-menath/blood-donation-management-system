@@ -3,7 +3,7 @@ import "./Login.css";
 import Signup from "./Signup.css";
 import logoimg from "../../assets/logo.png";
 import Headerblank from "../../components/Headerblank"
-
+import loginImg from"../../assets/login.png";
 const Login = () => {
   const [showSignup, setShowSignup] = useState(false);
 
@@ -15,12 +15,12 @@ const Login = () => {
 
         {/* Content */}
         <main className="content">
-          <div className="quote-section">
-            <p>
-              “Every drop of blood you donate brings hope and life to someone in
-              need.”
-            </p>
+
+        <div className="image-section">
+            <img src={loginImg} alt="Login Illustration" className="login-illustration" />
           </div>
+
+         
 
           <div className="login-box">
             <h2>🩸 BloodLink</h2>
