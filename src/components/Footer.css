@@ -1,0 +1,84 @@
+/* Footer styles to match Figma design */
+.site-footer {
+  width: 100%;
+  margin-top: 0; /* removed extra gap so stats sit directly under page content */
+  box-sizing: border-box;
+  background: transparent; /* ensure no extra bar behind stats */
+}
+
+/* Stats strip (dark gray) */
+.footer-stats {
+  background-color: #424242; /* same as header background */
+  color: #ffffff;
+  padding: 48px 16px; /* taller area to match Figma */
+  border-top: none; /* explicitly remove any top border */
+  box-shadow: none;   /* explicitly remove any shadow that looks like a strip */
+}
+
+.footer-stats-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 140px;
+}
+
+.stat-value {
+  font-size: 32px; /* larger numbers for stronger visual weight */
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 15px;
+  opacity: 0.95;
+  color: #f3f3f3;
+}
+
+/* Bottom copyright bar (slimmer red to match Figma)
+   Use a more specific selector to override other global .footer-bottom rules (e.g., FooterHome.css) */
+.site-footer .footer-bottom {
+  background-color: #b21212; /* default red, can be overridden by prop */
+  color: #ffffff;
+  text-align: center;
+  padding: 2px 12px !important; /* enforce slimness even if other CSS sets larger padding */
+  font-size: 12px !important;
+  line-height: 1; /* ensure minimal vertical height */
+  border-top: none; /* removed the dark divider */
+}
+
+/* fallback: if any other rules force large height, set a max-height */
+.site-footer .footer-bottom-inner { max-height: 28px; overflow: hidden; }
+
+.footer-bottom-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive: stack stat items on narrow screens */
+@media (max-width: 720px) {
+  .footer-stats-inner {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    padding: 2px 0; /* keep some breathing room on mobile */
+  }
+
+  .stat-item {
+    min-width: auto;
+  }
+
+  .stat-value {
+    font-size: 24px;
+  }
+}
