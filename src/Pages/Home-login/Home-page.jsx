@@ -2,18 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../Home-login/Home-page.css";
 import Header from "./Header";
-import heroImg from "../../assets/home.png"; // your main illustration
-import www from "../../assets/www.png";   // BloodLink logo
+import heroImg from "../../assets/home.png"; 
+import www from "../../assets/www.png";   
 import bld from"../../assets/BLD.png";
+import giveBloodImg from "../../assets/give-blood.png"; 
+
 const HomePage = () => {
   return (
     <div className="homepage">
-      {/* 1. Header එක මෙතැනට ඇතුළත් කළා */}
+      {/* 1. Header එක */}
       <Header /> 
 
       {/* HERO SECTION */}
       <section className="hero">
         <div className="hero-left">
+         
           <h1>
             “To create a world<br />
             where no life is lost<br />
@@ -26,13 +29,17 @@ const HomePage = () => {
             bridge connecting every urgent blood request with a willing, local
             donor.
           </p>
+          
+          {/* අලුතින් එකතු කළ රූපය */}
+          <img src={giveBloodImg} alt="Give Blood Save Life" className="give-blood-side-img" />
           <button className="login-btn">Log in</button>
         </div>
-
+        
         <div className="hero-right">
           <img src={heroImg} alt="Blood donation illustration" />
           <p className="hero-quote">“Every login brings you closer to saving a life.”</p>
-        </div>
+        </div>.
+        
       </section>
 
       {/* STATS SECTION */}
@@ -59,7 +66,6 @@ const HomePage = () => {
       <section className="cta">
         <img src={bld} alt="bld" className="cta-logo"/>
         <p className="cta-text">Connecting Hearts · Saving Lives · Every drop counts</p>
-
       </section>
 
       {/* FOOTER */}
@@ -68,7 +74,7 @@ const HomePage = () => {
           <div className="feedback-box">
             <p>Share your experience with us!</p>
             <Link to="/Feedback">
-            <button className="outline-btn">Click Here to send Feedback</button>
+              <button className="outline-btn">Click Here to send Feedback</button>
             </Link>
           </div>
           <div className="donate-box">
