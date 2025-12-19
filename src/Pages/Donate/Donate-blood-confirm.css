@@ -1,0 +1,156 @@
+/* ========================= */
+/* Feedback Page Container   */
+/* ========================= */
+
+.ft-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 36px 0 0; 
+  background: #ffffff;
+  
+  /* Flexbox logic */
+  display: flex;
+  flex-direction: column;
+  
+  /* Reduced min-height because stats is now outside the container */
+  min-height: 60vh; 
+  
+  position: relative;
+}
+
+/* Back Button Style */
+.ft-back {
+  background: #fff;
+  border: 1px solid #f3bdbd;
+  color: #b22222;
+  padding: 8px 14px;
+  border-radius: 18px;
+  display: inline-flex;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 20px; 
+  align-self: flex-start; 
+  margin-bottom: 20px;
+}
+
+/* ========================= */
+/* Hero Section (Image + Text) */
+/* ========================= */
+
+.ft-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px 20px 60px; 
+  flex-grow: 1; 
+}
+
+.ft-left img {
+  max-width: 450px;
+  height: auto;
+  object-fit: contain;
+}
+
+.ft-right {
+  max-width: 480px;
+  text-align: left;
+}
+
+.ft-check {
+  margin-bottom: 20px;
+}
+
+.ft-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.ft-sub {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ========================= */
+/* Stats Strip (Black Banner)  */
+/* ========================= */
+
+.about-stats {
+  background-color: #4a4a4a;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 45px 0;
+  
+  /* Natural Full Width: Works because it is now outside the ft-container */
+  width: 100%; 
+  margin: 0;
+  position: relative;
+  left: 0;
+  border-radius: 0;
+}
+
+.about-stats div {
+  text-align: center;
+}
+
+.about-stats div * {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.about-stats h2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.about-stats p {
+  font-size: 13px;
+  color: #f1f1f1;
+}
+
+/* ========================= */
+/* Footer Gap Fix            */
+/* ========================= */
+
+footer, .footer {
+  margin-top: 0 !important;
+  display: block;
+}
+
+/* ========================= */
+/* Mobile Responsive         */
+/* ========================= */
+
+@media (max-width: 860px) {
+  .ft-hero {
+    flex-direction: column-reverse; 
+    text-align: center;
+    gap: 30px;
+  }
+
+  .ft-right {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ft-left img {
+    max-width: 100%;
+  }
+
+  .about-stats {
+    flex-direction: column;
+    gap: 24px;
+    padding: 30px 0;
+    /* Resetting mobile full-width logic to match parent */
+    width: 100%;
+    margin-left: 0;
+  }
+}
