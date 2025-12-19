@@ -1,41 +1,64 @@
-.header {
-  position: relative;
-  width: 100vw;              /* force full screen */
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;        /* break out of parent */
-  margin-right: -50vw;
-  margin-top: -0.5vw;
-
-  background-color: #F3F3F3;
-  border-bottom: 2px solid #FF0105;
-  padding: 10px 0;
+/* src/Pages/Home-login/Header.css */
+.home-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 0px 50px !important; /* උඩ සහ යට padding සම්පූර්ණයෙන්ම ඉවත් කළා */
+  background-color: #F0F0F0 !important; 
   
+  border-bottom: 2px solid #ff4d4d !important; /* ලයින් එකේ මහත පොඩ්ඩක් අඩු කළා */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+  
+  position: sticky !important; 
+  top: 0 !important;
+  z-index: 1000 !important;
+  min-height: 60px !important; /* Header එකේ උස 60px දක්වා අඩු කළා */
 }
 
-.header-container {
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 0 20px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.home-logo-container {
+  display: flex !important;
+  align-items: center !important;
 }
 
-.logo-section {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.header-logo {
+  /* උස 55px දක්වා අඩු කළා, එවිට Header එක කුඩා වේ */
+  height: 55px !important; 
+  width: auto !important;   
+  object-fit: contain !important;
+  display: block !important;
+  margin: 5px 0 !important;
 }
 
-.logo {
-  width: 45px;
-  height: 45px;
+.header-buttons {
+  display: flex !important;
+  gap: 15px !important;
 }
 
-.brand-text {
-  height: 32px;
+/* Log in Button Style */
+.log-in-btn {
+  background-color: #ff4d4d !important;
+  color: white !important;
+  border: none !important;
+  padding: 6px 20px !important; /* Button එකේ සයිස් එකත් පොඩ්ඩක් අඩු කළා */
+  border-radius: 20px !important;
+  cursor: pointer !important;
+  font-weight: bold !important;
+  font-size: 14px !important;
 }
 
+/* Sign up Button Style */
+.sign-up-btn {
+  background-color: #ff4d4d !important;
+  color: white !important;
+  border: none !important;
+  padding: 6px 20px !important; 
+  border-radius: 20px !important;
+  cursor: pointer !important;
+  font-weight: bold !important;
+  font-size: 14px !important;
+}
 
+.log-in-btn:hover, .sign-up-btn:hover {
+  background-color: #e60000 !important;
+  transform: scale(1.05) !important;
+}

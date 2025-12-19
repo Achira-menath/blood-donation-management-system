@@ -1,19 +1,18 @@
-import React from "react";
-import "./Headerblank.css";
+import React from 'react';
+import { Link } from "react-router-dom";
+import './Headerblank.css'; 
+import Hedimg from "../assets/BLD.png";
 
-import logo from "../assets/logo.png";
-import bloodlink from "../assets/bloodlink.png";
-
-export default function Header() {
+const Header = () => {
   return (
-    <header className="header">
-      <div className="header-container">
-
-        <div className="logo-section">
-          <img src={logo} alt="Logo" className="logo" />
-          <img src={bloodlink} alt="BloodLink" className="brand-text" />
-        </div>
+    <header className="home-header">
+      <div className="home-logo-container">
+        {/* Logo එක මෙතැන තිබේ */}
+        <img src={Hedimg} alt="logo" className="header-logo" />
       </div>
+      
     </header>
   );
-}
+};
+
+export default Header;
