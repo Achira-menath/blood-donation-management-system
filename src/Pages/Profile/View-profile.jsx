@@ -85,7 +85,6 @@ export default function ViewProfile() {
         <img src={logo} alt="logo" className="logo" />
         <img src={bloodlink} alt="BloodLink" className="bloodlink" />
       </div>
-
       <Footer bgColor="#030000" opacity={0.6} />
     </>
   );
