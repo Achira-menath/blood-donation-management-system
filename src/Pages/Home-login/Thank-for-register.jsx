@@ -15,9 +15,12 @@ export default function RegisterSuccess() {
     <>
       <HeaderMain />
 
+      <br />
+
       {/* MAIN CONTENT */}
       <main className="rs-main">
         <div className="rs-content">
+
 
           {/* LEFT */}
           <div className="rs-left">
@@ -54,6 +57,9 @@ export default function RegisterSuccess() {
 
         </div>
       </main>
+      <br />
+      <br />
+      <br />
 
       {/* GRAY STATS STRIP */}
       <section className="rs-stats">

@@ -1,60 +1,51 @@
 import React, { useState } from "react";
 import "./Login.css";
-import Signup from "./Signup.css";
-import logoimg from "../../assets/logo.png";
-import Headerblank from "../../components/Headerblank"
-import loginImg from"../../assets/login.png";
+import Signup from "./Signup";
+import Headerblank from "../../components/Headerblank";
+import loginImg from "../../assets/login.png";
+import Footer from "../../components/Footer";
+import bloodDrop from "../../assets/logo.png";
+import bloodlinkLogo from "../../assets/bloodlink.png";
+
 const Login = () => {
   const [showSignup, setShowSignup] = useState(false);
 
   return (
-    <>
-      <div className="page">
-        {/* Navbar */}
-        <Headerblank />
+    <div className="page">
+      <Headerblank />
 
-        {/* Content */}
-        <main className="content">
-
+      <main className="content">
+        {/* LEFT IMAGE */}
         <div className="image-section">
-            <img src={loginImg} alt="Login Illustration" className="login-illustration" />
-          </div>
+          <img src={loginImg} alt="Login" />
+        </div>
 
-         
+        {/* RIGHT LOGIN CARD */}
+        <div className="login-box">
+          <img src={bloodDrop} alt="Blood Drop" className="rs-drop-logo" /><br />
+              <img src={bloodlinkLogo} alt="BloodLink" className="rs-text-logo" /><br />
 
-          <div className="login-box">
-            <h2>🩸 BloodLink</h2>
+          <input type="text" placeholder="User ID" />
+          <input type="password" placeholder="Password" />
 
-            <input type="text" placeholder="User ID" />
-            <input type="password" placeholder="Password" />
+          <div className="forgot">Forgot password?</div>
 
-            <div className="forgot">Forgot Password?</div>
+          <button className="login-btn">Login</button>
 
-            <button className="login-btn">Login</button>
+          <p className="signup-text">
+            If you are not Registered please Sign up.
+          </p>
 
-            <p className="signup-text">
-              If you are not registered please sign up
-            </p>
+          <button className="signup-btn" onClick={() => setShowSignup(true)}>
+            Sign Up
+          </button>
+        </div>
+      </main>
 
-            <button
-              className="signup-btn"
-              onClick={() => setShowSignup(true)}
-            >
-              Sign Up
-            </button>
-          </div>
-        </main>
+      <Footer bgColor="#000000ff" opacity={1} />
 
-        {/* Footer */}
-        <footer className="footer">
-          Copyright © 2025 National Blood Transfusion Service – All
-          Rights Reserved
-        </footer>
-      </div>
-
-      {/* Signup Modal / Page */}
       {showSignup && <Signup close={() => setShowSignup(false)} />}
-    </>
+    </div>
   );
 };
 
