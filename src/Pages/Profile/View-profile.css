@@ -1,7 +1,7 @@
 .profile-page {
   background-color: #f9f9f9;   /* ← change this color */
   background-image: url("../../assets/Vbg.png");
-  min-height: 96vh;
+  min-height: 100vh;
   background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
@@ -140,7 +140,7 @@
   position: absolute;
   right: 210px;
   bottom: 28px;
-  width: 50px;
+  width: 40px;
   z-index: 3;
 }
 
@@ -150,100 +150,4 @@
   bottom: 40px;
   width: 150px;
   z-index: 3;
-}
- /* ================= MOBILE RESPONSIVE ================= */
-@media (max-width: 768px) {
-
-  /* PAGE */
-  .profile-page {
-    padding: 16px;
-    background-size: 120%;
-    min-height: auto;
-  }
-
-  /* HEADER */
-  .profile-header {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .header-buttons {
-    width: 100%;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .outline-btn {
-    font-size: 12px;
-    padding: 7px 18px;
-  }
-
-  /* PROFILE WRAPPER */
-  .profile-wrapper {
-    margin-top: 80px;
-    padding: 0 10px;
-  }
-
-  /* USER INFO */
-  .user-info {
-    position: static;
-    justify-content: center;
-    margin-bottom: 16px;
-    text-align: center;
-  }
-
-  .user-info img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .user-info h3 {
-    font-size: 14px;
-  }
-
-  /* CARD */
-  .profile-card {
-    width: 100%;
-    padding: 20px;
-    border-radius: 14px;
-  }
-
-  .profile-card h2 {
-    font-size: 15px;
-  }
-
-  .profile-card table {
-    font-size: 12px;
-  }
-
-  .profile-card tr {
-    display: flex;
-    flex-direction: column;
-    padding: 8px 0;
-    border-bottom: 1px solid #e5e7eb;
-  }
-
-  .profile-card td {
-    border-bottom: none;
-    padding: 4px 0;
-  }
-
-  .profile-card td:first-child {
-    width: 100%;
-    font-weight: 600;
-    color: #111827;
-  }
-
-  /* LOGOS */
-  .logo {
-    right: 16px;
-    bottom: 16px;
-    width: 40px;
-  }
-
-  .bloodlink {
-    right: 16px;
-    bottom: 60px;
-    width: 110px;
-  }
 }

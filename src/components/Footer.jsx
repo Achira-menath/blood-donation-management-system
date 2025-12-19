@@ -18,7 +18,7 @@ const Footer = ({
           backgroundColor: bgColor,
           opacity: opacity,
           color: "white",              // ✅ white text
-          padding: "10px 0",           // give some vertical room for the text
+          padding: "6px 0",           // give some vertical room for the text
           display: "flex",             // ✅ center text
           alignItems: "center",         // vertical center
           justifyContent: "center",     // horizontal center
