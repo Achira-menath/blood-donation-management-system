@@ -26,8 +26,8 @@ const Login = () => {
           <img src={bloodDrop} alt="Blood Drop" className="rs-drop-logo" /><br />
               <img src={bloodlinkLogo} alt="BloodLink" className="rs-text-logo" /><br />
 
-          <input type="text" placeholder="User ID" />
-          <input type="password" placeholder="Password" />
+          <input type="text" placeholder="User ID" required/>
+          <input type="password" placeholder="Password" required/>
 
           <div className="forgot">Forgot password?</div>
           <Link to="/home">
