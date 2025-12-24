@@ -1,9 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import HeaderMain from "../../components/HeaderMain";
 import Footer from "../../components/Footer";
 
-// Images
 import bloodDrop from "../../assets/logo.png";
 import bloodlinkLogo from "../../assets/bloodlink.png";
 import successIcon from "../../assets/success.png";
@@ -11,18 +10,39 @@ import successIcon from "../../assets/success.png";
 import "./Thank-for-register.css";
 
 export default function RegisterSuccess() {
+  const navigate = useNavigate();
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const dummyEmail = "user@example.com";
+  const dummyPassword = "123";
+
+  const handleLogin = () => {
+    if (!email || !password) {
+      setError("Please enter both email and password.");
+      return;
+    }
+
+    if (email === dummyEmail && password === dummyPassword) {
+      alert("Login Successful!");
+      navigate("/home"); 
+    } else {
+      setError("Invalid email or password.");
+    }
+  };
+
   return (
     <>
       <HeaderMain />
 
       <br />
 
-      {/* MAIN CONTENT */}
+    
       <main className="rs-main">
         <div className="rs-content">
-
-
-          {/* LEFT */}
+          
           <div className="rs-left">
             <img src={successIcon} alt="Success" className="rs-success-icon" />
 
@@ -40,30 +60,41 @@ export default function RegisterSuccess() {
             </p>
           </div>
 
-          {/* RIGHT LOGIN BOX */}
+         
           <div className="rs-right">
             <div className="rs-logo-box">
               <img src={bloodDrop} alt="Blood Drop" className="rs-drop-logo" />
               <img src={bloodlinkLogo} alt="BloodLink" className="rs-text-logo" />
             </div>
 
-            <input type="text" placeholder="User ID" />
-            <input type="password" placeholder="Password" />
+           
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+
+            {error && <p className="rs-error">{error}</p>}
 
             <span className="rs-forgot">Forgot password?</span>
-            <Link to="/home">
-            <button className="rs-btn">Login</button>
-            </Link>
-            
+            <button className="rs-btn" onClick={handleLogin}>
+              Login
+            </button>
           </div>
-
         </div>
       </main>
       <br />
       <br />
       <br />
 
-      {/* GRAY STATS STRIP */}
       <section className="rs-stats">
         <div>
           <h3>10,000+</h3>

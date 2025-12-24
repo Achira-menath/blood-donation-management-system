@@ -1,6 +1,4 @@
 .signup-wrapper {
-  /* background image එක ඇතුළත් කිරීම */
-  background-image: url('../../assets/signup.png'); 
   
   /* image එක මුළු screen එකම වැසෙන සේ සැකසීම */
   background-size: cover;
@@ -8,8 +6,7 @@
   background-repeat: no-repeat;
   
   /* screen එකේ උසට ගැලපෙන සේ සැකසීම */
-  min-height: 100vh;
-  width: 100%;
+   width: 100%;
   
   /* Header එක සහ card එක නිවැරදිව පෙන්වීමට */
   display: flex;
@@ -25,8 +22,6 @@
   align-items: center;
   z-index: 999;
 }
-
-
 
 .signup-card {
   width: 700px;
